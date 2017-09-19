@@ -1,0 +1,145 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{88b1cdd3-56a3-4fc3-a016-7284de1b130a}</ProjectGuid>
+			<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+			<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<DCC_DependencyCheckOutputName>..\..\pGeoAnalises.exe</DCC_DependencyCheckOutputName>
+			<MainSource>pGeoBusiness.dpr</MainSource>
+			<ProjectVersion>12.0</ProjectVersion>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_ExeOutput>..\</DCC_ExeOutput>
+			<DCC_UsePackage>vclx;vcl;vclimg;dbrtl;Rave77VCL;bdertl;rtl;vclactnband;vcldb;vcldbx;vcltouch;xmlrtl;dsnap;dsnapcon;vclib;ibxpress;adortl;IndyCore;IndySystem;IndyProtocols;inet;intrawebdb_100_140;Intraweb_100_140;VclSmp;vclie;websnap;webdsnap;inetdb;inetdbbde;inetdbxpress;soaprtl;vclribbon;dbexpress;DbxCommonDriver;DataSnapIndy10ServerTransport;DataSnapProviderClient;DbxClientDriver;DataSnapServer;DBXInterBaseDriver;DBXMySQLDriver;dbxcds;DBXFirebirdDriver;DBXSybaseASEDriver;DBXSybaseASADriver;DBXOracleDriver;DBXMSSQLDriver;DBXInformixDriver;DBXDb2Driver;TeeTree2D14Tee8;TeeWorld814;TeeImage814;TeeLanguage814;TeePro814;TeeGL814;TeeUI814;TeeDB814;Tee814;dclRBE1114;rbCIDE1114;rbIDE1114;rbRCL1114;rbBDE1114;rbUSERDesign1114;rbUSER1114;rbDIDE1114;rbDAD1114;dclRBBDE1114;rbDBDE1114;rbDB1114;dclRBADO1114;rbADO1114;dclRBDBE1114;rbDBE1114;dclRBIBE1114;rbIBE1114;rbRIDE1114;rbRAP1114;rbTCUI1114;rbTC1114;owc2010;cxBarEditItemD14;cxExtEditorsD14;cxEditorsD14;cxLibraryD14;dxCoreD14;dxBarD14;dxBarDBNavD14;dxBarExtDBItemsD14;dxBarExtItemsD14;dxRibbonD14;dxdbtrD14;dxtrmdD14;dxmdsD14;dxDockingD14;dxFlowChartD14;dxLayoutControlD14;dxComnD14;dxMasterViewD14;dxNavBarD14;dxdborD14;dxorgcD14;cxPageControlD14;cxPivotGridChartD14;cxPivotGridD14;cxPivotGridOLAPD14;cxGridD14;cxTreeListD14;cxTreeListdxBarPopupMenuD14;cxSchedulerD14;cxSchedulerGridD14;dxsbD14;dcldxSkinsCoreD14;dxSkinsCoreD14;dxSkinscxPCPainterD14;dxSkinscxScheduler3PainterD14;dxSkinscxSchedulerPainterD14;dxSkinsdxDLPainterD14;dxSkinsdxRibbonPainterD14;dxSkinsdxBarPainterD14;dxSkinsdxNavBar2PainterD14;dxSkinBlackD14;dxSkinBlueD14;dxSkinCaramelD14;dxSkinCoffeeD14;dxSkinDarkRoomD14;dxSkinDarkSideD14;dxSkinFoggyD14;dxSkinGlassOceansD14;dxSkiniMaginaryD14;dxSkinLilianD14;dxSkinLiquidSkyD14;dxSkinLondonLiquidSkyD14;dxSkinMcSkinD14;dxSkinMoneyTwinsD14;dxSkinOffice2007BlackD14;dxSkinOffice2007BlueD14;dxSkinOffice2007GreenD14;dxSkinOffice2007PinkD14;dxSkinOffice2007SilverD14;dxSkinPumpkinD14;dxSkinSevenD14;dxSkinSharpD14;dxSkinSilverD14;dxSkinSpringTimeD14;dxSkinStardustD14;dxSkinSummer2008D14;dxSkinValentineD14;dxSkinXmas2008BlueD14;dxSpellCheckerD14;cxSpreadSheetD14;cxVerticalGridD14;dxPSCoreD14;dxPScxCommonD14;dxPScxExtCommonD14;dxPScxGrid6LnkD14;dxPScxPivotGrid2LnkD14;dxPScxScheduler3LnkD14;dxPScxSSLnkD14;dxPScxTL5LnkD14;dxPScxVGridLnkD14;dxPSDBTeeChartD14;dxPSTeeChartD14;dxPSdxDBOCLnkD14;dxPSdxDBTVLnkD14;dxPSdxFCLnkD14;dxPSdxLC2LnkD14;dxPSdxLCLnkD14;dxPSdxOCLnkD14;dxPSLnksD14;dxPScxPCProdD14;dxPsPrVwAdvD14;dxPSPrVwRibbonD14;xhCntrls140;xhStd140;xhExport140</DCC_UsePackage>
+			<DCC_DependencyCheckOutputName>..\pGeoBusiness.exe</DCC_DependencyCheckOutputName>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<Version>7.0</Version>
+			<DCC_DebugInformation>False</DCC_DebugInformation>
+			<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<Version>7.0</Version>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="pGeoBusiness.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="uPrincipal.pas">
+				<Form>frmPrincipal</Form>
+			</DCCReference>
+			<DCCReference Include="uAguarde.pas">
+				<Form>frmAguarde</Form>
+			</DCCReference>
+			<DCCReference Include="uFiltro.pas">
+				<Form>frmFiltro</Form>
+			</DCCReference>
+			<DCCReference Include="uArqGeoBusiness.pas">
+				<Form>frmArqGeoBusiness</Form>
+			</DCCReference>
+			<DCCReference Include="uInformacoes.pas">
+				<Form>frmInformacoes</Form>
+			</DCCReference>
+			<DCCReference Include="uInfoLocalizacao.pas">
+				<Form>frmInfoLocalizacao</Form>
+			</DCCReference>
+			<DCCReference Include="uEditarInfoLocalizacao.pas">
+				<Form>frmEditarInfoLocalizacao</Form>
+			</DCCReference>
+			<DCCReference Include="uEditarInfoFatos.pas">
+				<Form>frmEditarInfoFatos</Form>
+			</DCCReference>
+			<DCCReference Include="uRegistro.pas">
+				<Form>frmRegistro</Form>
+			</DCCReference>
+			<DCCReference Include="uni_RegCommon.pas"/>
+			<DCCReference Include="uAbout.pas">
+				<Form>frmAbout</Form>
+			</DCCReference>
+			<None Include="pGeoBusiness.todo"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">2011</VersionInfo>
+						<VersionInfo Name="MinorVer">2</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">2011.2.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">pGeoBusiness.dpr</Source>
+					</Source>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\RBuilder\Lib\dclRBE1114.bpl">File c:\program files\embarcadero\rad studio\7.0\RBuilder\Lib\dclRBE1114.bpl not found</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\RBuilder\Lib\dclRBU1114.bpl">File c:\program files\embarcadero\rad studio\7.0\RBuilder\Lib\dclRBU1114.bpl not found</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\RBuilder\Lib\dclDAD1114.bpl">File c:\program files\embarcadero\rad studio\7.0\RBuilder\Lib\dclDAD1114.bpl not found</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\RBuilder\Lib\dclRBBDE1114.bpl">File c:\program files\embarcadero\rad studio\7.0\RBuilder\Lib\dclRBBDE1114.bpl not found</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\RBuilder\Lib\dclRBADO1114.bpl">File c:\program files\embarcadero\rad studio\7.0\RBuilder\Lib\dclRBADO1114.bpl not found</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\RBuilder\Lib\dclRBDBE1114.bpl">File c:\program files\embarcadero\rad studio\7.0\RBuilder\Lib\dclRBDBE1114.bpl not found</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\RBuilder\Lib\dclRBIBE1114.bpl">File c:\program files\embarcadero\rad studio\7.0\RBuilder\Lib\dclRBIBE1114.bpl not found</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\RBuilder\Lib\dclRAP1114.bpl">File c:\program files\embarcadero\rad studio\7.0\RBuilder\Lib\dclRAP1114.bpl not found</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<ModelSupport>False</ModelSupport>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>
